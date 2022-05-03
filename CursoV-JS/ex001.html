@@ -7,8 +7,8 @@
     <title>JS programa</title>
     <style>
         body {
-            background-color: greenyellow;
-            color: whitesmoke;
+            background-color: rgb(69, 42, 110);
+            color: whitesmoke; /*COMENTARIO CSS*/
             font: normal 20pt Arial;
         }
         h1 {
@@ -17,12 +17,22 @@
     </style>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <h1>Hello World</h1> <!-- COMENTARIO HTML-->
     <p>Curse removed!</p>
     <script>
-        window.alert('Primeira Mensagem')
-        window.confirm('Gosta de JS?')
-        window.prompt('Seu Primeiro Nome')
+        var n1 = Number(window.prompt('Digite um numero'))//parseFloat or
+        var n2 = Number(window.prompt('Digite outro numero'))//parseInt old
+        var s = n1 + n2
+        window.alert(`A soma entre ${n1} + ${n2} eh igual a ${s}`) //TEMPLATE STRING
+        //window.alert('A soma dos valores eh ' + String(s))//Concatenacao
+        //window.alert('A soma dos valores eh ' + s))
+        // (number + number) para adicao
+        // (string + string) para concatenacao
+        //window.alert('Primeira Mensagem')
+        //window.confirm('Gosta de JS?') // janela botao ok ou cancel
+        //var nome = window.prompt('Qual seu primeiro nome?')/*mais de uma linha de cód*/
+        //window.alert('Prazer em te conhecer, ' + nome + '!') //Concatenacao
     </script>
 </body>
 </html>
+
