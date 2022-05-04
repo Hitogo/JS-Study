@@ -1,0 +1,82 @@
+Java Script
+
+vaga a1 =(recebe) carro1
+var ou let podem ser usados em JS
+
+var n1 = 5		var s1 = "JavaScript"
+var n2 = 8.5	var s2 = 'Curso'
+var n3 = 15		var s3 = `Wellin`
+
+
+Identificadores:
+podem comecar com LETRA, $ ou _
+Nao podem comecar com NUMEROS
+Possivel usar LETRAS E NUMEROS
+Possivel usar ACENTOS E SIMBOLOS
+Nao podem conter ESPACO
+Nao podem ser PALAVRAS RESERVADAS
+
+DICAS PARA IDENTIFICADORES
+Maiusculas e Minusculas fazem a diferenca
+Tente usar nomes coerentes para variaveis
+Evitar ser programador analfabeto
+
+variaveis servem para guardar DADOS!
+
+
+
+
+										*TIPOS PRIMITIVOS, DATA TYPES**
+											PRIMORDIAIS		TYPEOF
+
+
+NUMBER - 5 18 -12 0.5 -14.7 3.14 
+*Infinity
+*NaN
+
+STRING - 'exem' "exem" `exem`
+
+BOOLEAN - TRUE FALSE
+
+NULL
+
+UNDEFINED
+
+OBJECT
+*Array
+
+FUNCTION
+
+
+
+
+											**`${Manipulacao de Dados}**
+
+//Guardando valores digitados
+
+Number.parseInt(n) Converte p numeros inteiros 5
+Number.parseFloat(n) Converte p numeros reais 5.5
+
+Atualmente se usa apenas Number. que eh automaticamente detectado como Int ou Float
+
+		Converter Numero -> String
+		String(n)
+		ou
+		n.toString()
+
+//Formatando Strings 										TEMPLATE STRINGS
+var S = 'JavaScript'										`Estou aprendendo ${s} //USA TEMPLATE STRING
+'Estou aprendendo s' //SEM INTERPOLACAO							
+'Estou aprendendo' + s										
+
+
+								var s = 'JavaScript'
+								s.lenght //quantos caracteres tem a string **ATRIBUTO** SEM PARENTESES
+								s.toUpperCase() //tudo para Maiusculas 
+								s.toLowerCase() //tudo para Minusculas
+
+Formatando Numeros
+var n1 = 1545.5
+var n1.toFixed(2) ->1545.50
+var n1.toFixed(2).replace('.', ',') -> 1545,50
+var n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) ->R$1545,50
