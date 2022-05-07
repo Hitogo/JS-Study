@@ -59,15 +59,19 @@ Number.parseFloat(n) Converte p numeros reais 5.5
 
 Atualmente se usa apenas Number. que eh automaticamente detectado como Int ou Float
 
-		Converter Numero -> String
+		Converter Number -> String
 		String(n)
 		ou
 		n.toString()
+		usar parseInt/parseFloat apenas para numeros inteiros e reais especificamente.
 
-//Formatando Strings 										TEMPLATE STRINGS
-var S = 'JavaScript'										`Estou aprendendo ${s} //USA TEMPLATE STRING
-'Estou aprendendo s' //SEM INTERPOLACAO							
-'Estou aprendendo' + s										
+								*Formatando Strings*
+
+						('Estou aprendendo s') //SEM INTERPOLACAO							
+						('Estou aprendendo' + s) //USA CONCATENACAO
+						('Estou aprendendo ${s}') //USA TEMPLATE STRING
+
+
 
 
 								var s = 'JavaScript'
@@ -75,8 +79,14 @@ var S = 'JavaScript'										`Estou aprendendo ${s} //USA TEMPLATE STRING
 								s.toUpperCase() //tudo para Maiusculas 
 								s.toLowerCase() //tudo para Minusculas
 
+
+
 Formatando Numeros
 var n1 = 1545.5
 var n1.toFixed(2) ->1545.50
 var n1.toFixed(2).replace('.', ',') -> 1545,50
 var n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) ->R$1545,50
+
+
+
+								JavaScript var let ou const
