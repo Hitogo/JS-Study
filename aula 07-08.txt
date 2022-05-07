@@ -1,6 +1,6 @@
 											OPERADORES DO JS
 
-Aritimeticos	Atribuicao		relacionais		logicos		ternario
+						Aritimeticos	Atribuicao		relacionais		logicos		ternario
 
 
 
@@ -49,4 +49,80 @@ x = x - 1				x--
 
 Sinais  pos incremento		x++ 
 	  pre incremento		++x
-	
+
+
+Operadores Relacionais
+>	(maior)			5 > 2   -> true
+<	(menor)			7 < 4   -> false
+>=	(maior ou igual)		8 >= 8  -> true
+<=	(menor ou igual)		9 <= 7  -> false
+==	(igual)			5 == 5  -> true
+!=	(n igual)			4 != 4  -> false
+
+Exemplos
+preco >= 200.50 		(o preco eh maior ou igual a 200.50?)
+idade < 18 			(a idade eh menor que 18?)
+curso == JavaScript"	(o curso e JavaScript?)
+
+
+Operadores de Identidade
+
+5 ==  5 		-> true 
+5 ==	'5' 		-> true (Sinal de igualdade nao testa tipo, o JavaScript avalia totalidade)
+
+IDENTIDADE
+5 === '5'		-> false (Testa se sao identicos em tipo(!=) e valor(==))
+5 === 5		-> true  (5 eh identico a 5? (mesmo valor e tipo(num)))
+x(5) !== y(5)	-> true  (desigual restrito) 	x !== y -> tipos diferentes mas valores iguais
+
+
+Operadores Logicos
+
+! negacao		-> nao 	   exm(quero uma caneta que nao seja azul)
+&& conjuncao	-> 'e' logico  exm(quero uma caneta azul e uma vermelha)
+|| disjuncao	-> 'ou' logico exm(quero uma caneta azul ou uma vermelha)
+
+(!) negacao - operador unario, soh tem 1 operando, depois da ! vem true ou false
+!true  -> false
+!false -> true
+
+(&&) conjucao - operador binario, 2 valores logicos (um de cada lado) satisfaz se ambos os lados forem true
+true && true   -> true
+true && false  -> false
+false && true  -> false
+false && false -> false
+
+(||) disjuncao - operador binario, valores logicos (um de cada lado) satisfaz se 1 dos lados for true
+true  || true  -> true
+true  || false -> true
+false || true  -> true
+false || false -> false
+
+Ordem dos operadores logicos eh SEMPRE NAO -> E -> OU
+ex: 
+var a = 5	var b = 8
+a > b $$ b % 2 == 0 -> false (primeiro operadores aritimeticos, depois relacionais e depois logicos)
+a <= b || b / 2 == 2 -> true
+
+	1 - !nao 	2 - e&& 	3 - ou||
+
+ex: 	idade >= 15 && idade <= 17 		()()		(A idade esta entre 15 e 17?)
+	estado == 'RJ' || estado == 'SP' 	()()		(o estado eh o RJ SP?)
+	salario > 1500 && sexo != 'M'		()()		(o salario eh maior que 1500 para mulher?)
+
+Ordem de PRECEDENCIA
+
+()	**	/	aritimeticos
+
+>	< 	>=	relacionais
+
+!
+&&			logicos
+||
+
+
+Operadores ternarios (3 partes)
+
+ ?:		teste		 ?  true      :  false
+		media >= 7.0 ? 'Aprovado' : "Reprovado"
+
