@@ -1,0 +1,20 @@
+											Introduction to DOM
+
+DOM -> Document Object Model
+DOM eh um modelo de objetos para documentos, conjunto de objetos dentro do navegador que dah acesso aos componentes internos do website
+
+Arvore DOM -> janela do navegador
+Dentro de window -> location(url) , document(html) e history(de onde veio p onde vai)
+
+Selecionando ELEMENTOS
+
+TAG
+por Marca		-> getElementsByTagName() 	muitos elementos
+
+por ID		-> getElementById() 		1 objeto ou familia do objeto
+
+por Nome		-> getElementsByName() 		muitos elementos
+
+por Classe		-> getElementsByClass()		
+
+por Seletor		-> getElements			
